@@ -1,0 +1,20 @@
+namespace GameUnits
+{
+
+    public class SettlerUnit : Unit
+
+    {
+        private float unit_cost = 5;
+        private float unit_health;
+        private float unit_movement;
+
+        public override float Cost {get => _cost;}
+        public override float Health {get => Health;}
+
+        public SettlerUnit()
+        {
+            unit_move = 1;
+            unit_health = 2; 
+        }
+    }
+}

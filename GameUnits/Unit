@@ -1,0 +1,23 @@
+namespace GameUnits
+{
+
+    public abstract class GameUnits
+
+    {
+        int unit_movement = 0;
+
+        /* We use abstract because Cost is not implemented so we don´t give it
+        a body*/
+        public abstract float Cost {get;}
+
+        /* We use virtual because Health is not defined here we simply know
+        Unit has it*/
+        public virtual float Health {get; set;}
+
+        public int Move()
+
+        {
+            return unit_movement;
+        }
+    }
+}
